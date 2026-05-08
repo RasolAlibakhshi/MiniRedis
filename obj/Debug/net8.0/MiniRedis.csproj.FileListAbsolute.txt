@@ -1,0 +1,14 @@
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\bin\Debug\net8.0\MiniRedis.exe
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\bin\Debug\net8.0\MiniRedis.deps.json
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\bin\Debug\net8.0\MiniRedis.runtimeconfig.json
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\bin\Debug\net8.0\MiniRedis.dll
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\bin\Debug\net8.0\MiniRedis.pdb
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.AssemblyInfoInputs.cache
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.AssemblyInfo.cs
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.csproj.CoreCompileInputs.cache
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.dll
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\refint\MiniRedis.dll
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.pdb
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\MiniRedis.genruntimeconfig.cache
+C:\Users\Rasol\Desktop\RasolDB\ConsoleApp1\MiniRedis\obj\Debug\net8.0\ref\MiniRedis.dll
