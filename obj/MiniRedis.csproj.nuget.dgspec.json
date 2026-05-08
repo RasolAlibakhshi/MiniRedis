@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rasol\\Desktop\\RasolDB\\ConsoleApp1\\MiniRedis\\MiniRedis.csproj": {}
+    "C:\\Users\\Rasol\\Desktop\\New folder\\MiniRedis\\MiniRedis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rasol\\Desktop\\RasolDB\\ConsoleApp1\\MiniRedis\\MiniRedis.csproj": {
+    "C:\\Users\\Rasol\\Desktop\\New folder\\MiniRedis\\MiniRedis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rasol\\Desktop\\RasolDB\\ConsoleApp1\\MiniRedis\\MiniRedis.csproj",
+        "projectUniqueName": "C:\\Users\\Rasol\\Desktop\\New folder\\MiniRedis\\MiniRedis.csproj",
         "projectName": "MiniRedis",
-        "projectPath": "C:\\Users\\Rasol\\Desktop\\RasolDB\\ConsoleApp1\\MiniRedis\\MiniRedis.csproj",
+        "projectPath": "C:\\Users\\Rasol\\Desktop\\New folder\\MiniRedis\\MiniRedis.csproj",
         "packagesPath": "C:\\Users\\Rasol\\.nuget\\packages",
-        "outputPath": "C:\\Users\\Rasol\\Desktop\\RasolDB\\ConsoleApp1\\MiniRedis\\obj\\",
+        "outputPath": "C:\\Users\\Rasol\\Desktop\\New folder\\MiniRedis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
