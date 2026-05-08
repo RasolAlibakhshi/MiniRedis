@@ -19,5 +19,5 @@ COPY --from=build /app/publish ./
 
 EXPOSE 5000
 
-# اجرای برنامه
+
 ENTRYPOINT ["dotnet", "MiniRedis.dll"]
