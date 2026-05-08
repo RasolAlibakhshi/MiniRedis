@@ -31,7 +31,7 @@ MiniRedis is an educational project that demonstrates how to build a simple mult
 
 Run the server on the default port `5000`:
 
-```bash
+
 dotnet run
 
 ![alt text](image.png)
