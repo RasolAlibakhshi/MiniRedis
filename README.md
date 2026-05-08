@@ -42,13 +42,14 @@ Connect to the server:
 
 telnet 127.0.0.1 5000
 ![alt text](image-1.png)
+
 or
 
-Docker
+## Docker
 Build the Docker image:
     docker build -t miniredis -f Dockerfile .
 Run the container:
-docker run -p 5000:5000 miniredis
+    docker run -p 5000:5000 miniredis
 
 Technical Notes
 Built with TcpListener and TcpClient
