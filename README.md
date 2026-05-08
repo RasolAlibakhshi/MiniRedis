@@ -1,93 +1,73 @@
 # MiniRedis
 
-
-# MiniRedis (C#) — A Tiny Redis-like TCP Key-Value Server
-
-MiniRedis is a small, educational **Redis-inspired** in-memory key-value server built with **C#** and **TCP**.  
-Clients connect over TCP, send simple **line-based text commands**, and receive responses immediately.
+A tiny Redis-like TCP key-value server built with **C#**.  
+MiniRedis is an educational project that demonstrates how to build a simple multi-client TCP server with in-memory storage.
 
 ---
 
-## Why MiniRedis?
+## Features
 
-- Lightweight and easy to understand (no external dependencies)
-- **Multi-client** support (each connection handled in its own Task)
-- **Thread-safe** in-memory storage using `ConcurrentDictionary`
-- Super easy to test with **telnet** or **netcat**
-- Great for learning: TCP, streams, async/await, concurrency
+- Multi-client TCP support
+- In-memory key-value storage
+- Thread-safe with `ConcurrentDictionary`
+- Simple text-based protocol
+- Easy to test with `telnet` or `netcat`
 
 ---
 
-## Features / Commands
+## Commands
 
 | Command | Example | Description |
 |--------|---------|-------------|
-| `SET`  | `SET name rasol` | Set a value for a key |
-| `GET`  | `GET name` | Get the value of a key |
-| `DEL`  | `DEL name` | Delete a key |
+| `SET` | `SET name rasol` | Set a value for a key |
+| `GET` | `GET name` | Get the value of a key |
+| `DEL` | `DEL name` | Delete a key |
 | `KEYS` | `KEYS` | List all keys |
-| `EXIT` | `EXIT` | Close the client connection |
+| `EXIT` | `EXIT` | Close the connection |
 
 ---
 
+ Quick Start
 
-
-
-## Quick Start
-
-Run the server
-Default port is **5000**:
+Run the server on the default port `5000`:
 
 ```bash
 dotnet run
 
 ![alt text](image.png)
 
+Connect to the server:
 
-Connect & Test
 ![alt text](image-2.png)
 
 telnet 127.0.0.1 5000
 ![alt text](image-1.png)
 or
 
-build Dockerfile
+Docker
+Build the Docker image:
+    docker build -t miniredis -f Dockerfile .
+Run the container:
+docker run -p 5000:5000 miniredis
 
 Technical Notes
-    TCP server built with TcpListener / TcpClient
-    UTF-8 text I/O via:
-    StreamReader
-    StreamWriter (AutoFlush = true)
-    In-memory database:
-    ConcurrentDictionary<string, string>
-    Multiple clients:
-    accepted in an async loop
-    each client handled concurrently in its own Task
-    Clean shutdown:
-    CancellationTokenSource
-    listener.Stop()
+Built with TcpListener and TcpClient
+Uses StreamReader and StreamWriter
+StreamWriter is configured with AutoFlush = true
+Uses ConcurrentDictionary<string, string> for storage
+Each client is handled in its own task
+Supports clean shutdown with CancellationTokenSource
+Limitations
+Data is stored only in memory
+No authentication
+No TTL support
+Not RESP-compatible
+Only string values are supported
+Roadmap
+Possible improvements:
 
-Current Limitations
-This project is intentionally minimal and educational:
-
-Data is in-memory only (no persistence)
-No authentication/security
-No TTL/expire support
-Not using the Redis RESP protocol (simple text protocol instead)
-Only string values
-Roadmap / Ideas
-Want to level it up?
-
- Persistence (snapshot / append-only log)
- TTL support (EXPIRE, TTL)
- Multiple databases (like Redis)
- Implement RESP protocol (Redis-compatible clients)
- Add PING
- Logging, metrics, and unit tests
-Contributing
-Issues and PRs are welcome.
-
-If you add a new command/feature, please also add:
-
-a README usage example
-(ideally) a small test
+Persistence support
+TTL / expiration commands
+RESP protocol support
+PING command
+Logging and tests
